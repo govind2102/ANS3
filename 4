@@ -1,0 +1,24 @@
+import java.awt.Graphics;
+
+    public abstract interface Drawable
+    {
+      public abstract void draw(Graphics paramGraphics);
+    }
+this compiles successfully however, I cannot figure out why my DrawableExplorer class isn't:
+
+    import java.awt.*;
+    public class DrawableExplorer extends Explorer implements Drawable
+
+{
+
+    public DrawableExpolorer(Square location, Maze maze, String name)
+        {
+            public void draw(Graphics g)
+                {
+                    Square location = location();
+                    get.setColor(Color.BLUE);
+                    g.fillOval(loc.x() + 10, loc.y() + 10, 30, 30);
+
+                }
+        }
+}
